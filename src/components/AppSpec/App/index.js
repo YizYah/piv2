@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { EXECUTE_ACTION } from '@nostack/no-stack';
+import { EXECUTE } from '@nostack/no-stack';
 import compose from '@shopify/react-compose';
 import { graphql } from '@apollo/react-hoc';
 
@@ -196,6 +196,6 @@ function App({
 }
 
 export default compose(
-  graphql(EXECUTE_ACTION, { name: 'updateInstance' }),
-  graphql(EXECUTE_ACTION, { name: 'deleteInstance' })
+  graphql(EXECUTE, { name: 'updateInstance' }),
+  graphql(EXECUTE, { name: 'deleteInstance' })
 )(App);
