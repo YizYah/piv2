@@ -49,7 +49,7 @@ function ScreenCreationForm({ parentId, createScreen, refetchQueries }) {
       refetchQueries
     });
 
-    const newScreenData = JSON.parse(createScreenResponse.data.execute);
+    const newScreenData = JSON.parse(createScreenResponse.data.Execute);
 
     
 

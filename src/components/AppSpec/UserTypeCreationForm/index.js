@@ -49,7 +49,7 @@ function UserTypeCreationForm({ parentId, createUserType, refetchQueries }) {
       refetchQueries
     });
 
-    const newUserTypeData = JSON.parse(createUserTypeResponse.data.execute);
+    const newUserTypeData = JSON.parse(createUserTypeResponse.data.Execute);
 
     
 

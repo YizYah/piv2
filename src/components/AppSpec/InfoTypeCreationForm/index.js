@@ -49,7 +49,7 @@ function InfoTypeCreationForm({ parentId, createInfoType, refetchQueries }) {
       refetchQueries
     });
 
-    const newInfoTypeData = JSON.parse(createInfoTypeResponse.data.execute);
+    const newInfoTypeData = JSON.parse(createInfoTypeResponse.data.Execute);
 
     
 

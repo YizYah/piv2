@@ -49,7 +49,7 @@ function DescriptionCreationForm({ parentId, createDescription, refetchQueries }
       refetchQueries
     });
 
-    const newDescriptionData = JSON.parse(createDescriptionResponse.data.execute);
+    const newDescriptionData = JSON.parse(createDescriptionResponse.data.Execute);
 
     
 

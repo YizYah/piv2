@@ -56,7 +56,7 @@ function AppCreationForm({ customerId, createApp, refetchQueries }) {
       refetchQueries
     });
 
-    const newAppData = JSON.parse(createAppResponse.data.execute);
+    const newAppData = JSON.parse(createAppResponse.data.Execute);
 
     
 
