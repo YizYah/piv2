@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { graphql } from '@apollo/react-hoc';
 import styled from 'styled-components';
-import { withNoStack, EXECUTE_ACTION } from '@nostack/no-stack';
+import { withNoStack, EXECUTE } from '@nostack/no-stack';
 import compose from '@shopify/react-compose';
 
 import { CREATE_APP_FOR_APP_SPEC_ACTION_ID
@@ -56,7 +56,7 @@ function AppCreationForm({ customerId, createApp, refetchQueries }) {
       refetchQueries
     });
 
-    const newAppData = JSON.parse(createAppResponse.data.ExecuteAction);
+    const newAppData = JSON.parse(createAppResponse.data.execute);
 
     
 
@@ -96,7 +96,7 @@ function AppCreationForm({ customerId, createApp, refetchQueries }) {
 }
 
 export default compose(
-  graphql(EXECUTE_ACTION, { name: 'createApp' }),
+  graphql(EXECUTE, { name: 'createApp' }),
   
   
   
